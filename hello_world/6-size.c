@@ -5,7 +5,7 @@
  * return : Always 0 (sucess)
  */
 
-int main(void)
+void main(void)
 {
 	    int inttype;
 		float floattype;
