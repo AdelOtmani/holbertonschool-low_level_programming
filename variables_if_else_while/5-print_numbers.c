@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	for (a = 1; a <= 10; a++)
-	printf("%n\n")
+	for (a = 0; a <= 9; a++)
+	printf("%d\n", a)
 	return (0)
 }
