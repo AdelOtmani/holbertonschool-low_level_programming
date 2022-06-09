@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _abs - Check the code.
- * @r - int value
+ * @r: int value
  * Return: Always 0
  */
 int _abs(int r)
