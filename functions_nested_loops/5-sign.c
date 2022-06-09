@@ -2,7 +2,7 @@
 
 /**
  * print_sign - check the code.
- * @c: First operand
+ * @n: First operand
  * Return: Always 0.
  */
 
