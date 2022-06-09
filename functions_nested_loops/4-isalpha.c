@@ -10,11 +10,15 @@ int _isalpha(int c)
 {
 	int l = 0;
 	char n;
+	char m;
 
-	for (n = 'a'; n <= 'Z'; n++)
+	for (n = 'a'; n <= 'z'; n++)
 	{
-		if (n == c)
-			l = 1;
+		for (m = 'A'; m <= 'Z'; m++)
+		{
+			if (n == c || m == c)
+				l = 1;
+		}
 	}
 	return (l);
 }
