@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_alphabet_x10 - check the code.
+ * print_alphabet - check the code.
  * _putchar -
  *
  * Return: no return.
