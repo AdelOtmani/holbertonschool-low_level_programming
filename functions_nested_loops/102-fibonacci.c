@@ -12,8 +12,8 @@ int main(void)
 	long c;
 	int i;
 
-	printf("1, 2, "); 
-	for (i = 0; i < 49; i++)
+	printf("1, 2, ");
+	for (i = 0; i < 48; i++)
 	{
 		c = a + b;
 		printf("%ld", c);
