@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <math.h>
 /**
  * main - check the code
  *
@@ -8,16 +7,16 @@
 
 int main(void)
 {
-	float a = 1;
-	float b = 2;
-	float c;
+	unsigned long a = 1;
+	unsigned long b = 2;
+	unsigned long c;
 	int i;
 
 	printf("1, 2, ");
 	for (i = 0; i < 96; i++)
 	{
-		c = floor(a) + floor(b);
-		printf("%.0f", floor(c));
+		c = a + b;
+		printf("%lu", c);
 		if (i < 95)
 			printf(", ");
 		a = b;
