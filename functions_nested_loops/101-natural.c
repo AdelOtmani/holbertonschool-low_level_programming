@@ -1,11 +1,11 @@
 #include <stdio.h>
 /**
- * main: check the code
+ * main - check the code
  *
  * Return: Always 0 (success)
  */
 
-int main()
+int main(void)
 {
 	int n;
 	int sum = 0;
