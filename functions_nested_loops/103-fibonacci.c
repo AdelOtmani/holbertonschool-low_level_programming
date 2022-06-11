@@ -10,7 +10,7 @@ int main(void)
 	long a = 1;
 	long b = 2;
 	long c;
-	long sum = 1;
+	long sum = 2;
 
 	while (a + b < 4000000)
 	{
