@@ -6,11 +6,11 @@
  * Return: Always 0.
  */
 
-void times_table(void);
+void times_table(void)
 {
 	int a;
 	int b;
-	int r:
+	int r;
 
 		for (a = 0; a <= 9; a++)
 		{
