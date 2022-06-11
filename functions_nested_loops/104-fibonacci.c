@@ -1,5 +1,5 @@
-
 #include <stdio.h>
+#include <math.h>
 /**
  * main - check the code
  *
@@ -16,8 +16,8 @@ int main(void)
 	printf("1, 2, ");
 	for (i = 0; i < 96; i++)
 	{
-		c = a + b;
-		printf("%.0f", c);
+		c = floor(a) + floor(b);
+		printf("%.0f", floor(c));
 		if (i < 95)
 			printf(", ");
 		a = b;
