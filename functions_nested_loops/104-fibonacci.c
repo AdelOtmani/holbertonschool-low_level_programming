@@ -8,16 +8,16 @@
 
 int main(void)
 {
-	long a = 1;
-	long b = 2;
-	long c;
+	double a = 1;
+	double b = 2;
+	double c;
 	int i;
 
 	printf("1, 2, ");
 	for (i = 0; i < 96; i++)
 	{
 		c = a + b;
-		printf("%ld", c);
+		printf("%.0lf", c);
 		if (i < 95)
 			printf(", ");
 		a = b;
