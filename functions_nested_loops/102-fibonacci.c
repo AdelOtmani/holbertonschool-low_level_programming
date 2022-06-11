@@ -17,7 +17,7 @@ int main(void)
 	{
 		c = a + b;
 		printf("%ld", c);
-		if (i < 48)
+		if (i < 47)
 			printf(", ");
 		a = b;
 		b = c;
