@@ -6,7 +6,7 @@
  *
  * Return: Always 0.
  */
-int main()
+int main(void)
 {
 	int x = 1;
 
@@ -20,7 +20,7 @@ int main()
 		{
 			if (x == 100)
 			{
-				printf("Buzz");
+				printf("Buzz\n");
 			}
 			else
 				printf("Buzz ");
