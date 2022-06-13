@@ -16,6 +16,5 @@ int _isupper(int c)
 		if (n == c)
 			l = 1;
 	}
-	printf("%c: %d\n", c, l);
 	return (l);
 }
