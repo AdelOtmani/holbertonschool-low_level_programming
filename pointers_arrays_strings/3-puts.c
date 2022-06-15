@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * main - check the code
- *
+ * _puts - check the code
+ * @str: arg is string
  * Return: Always 0.
  */
 void _puts(char *str)
