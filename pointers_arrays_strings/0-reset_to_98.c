@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * reset_to_98 - check the code
- * @*n: arg is a pointer
+ * @n: arg is a pointer
  * Return: always 0.
  */
 void reset_to_98(int *n)
