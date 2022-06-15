@@ -1,10 +1,9 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * print_array - check the code
- * @a: arg is int pointer
- * @n: arg is a int
+ * *_strcpy - check the code
+ * @dest: arg is int pointer
+ * @src: arg is a pointer
  * Return: Always 0.
  */
 char *_strcpy(char *dest, char *src)
