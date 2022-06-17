@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * _strcmp - check the code
+ * reverse_array - check the code
  * @a: arg is a pointer
  * @n: arg is an int
  * Return: always 0.
