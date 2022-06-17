@@ -2,8 +2,7 @@
 #include <stdio.h>
 /**
  * *string_toupper - check the code
- * @a: arg is a pointer
- * @n: arg is an int
+ * @s: arg is a char pointer
  * Return: always 0.
  */
 
