@@ -13,7 +13,7 @@ char *leet(char *s)
 	{
 		for (j = 0; j < 5; j++)
 		{
-			if (s[i] == a[j] || s[i] - 32 == a[j])
+			if (s[i] == a[j] || (s[i] - 32) == a[j])
 					s[i] = a[j + 5];
 		}
 	}
