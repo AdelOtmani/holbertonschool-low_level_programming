@@ -1,10 +1,8 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * print_chessboard - check the code 
- *
+ * print_chessboard - check the code
  * @a: pointer char
- * 
  * Return: 0 Always
  */
 
