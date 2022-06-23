@@ -1,13 +1,11 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * *_strstr - locates a substring
+ * print_chessboard - check the code 
  *
- * @haystack: pointer char
- * @needle: pointer char
- *
- * Return: a pointer to the beginning of the located substring, or NULL if
- * the substring is not found.
+ * @a: pointer char
+ * 
+ * Return: 0 Always
  */
 
 void print_chessboard(char (*a)[8])
