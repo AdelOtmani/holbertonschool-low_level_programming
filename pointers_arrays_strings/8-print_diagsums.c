@@ -1,7 +1,8 @@
 #include "main.h"
 #include <stdio.h>
-/*
- * print_diagsums - prints sum of diagonal
+
+/**
+ * print_diagsums - check the code .
  * @a: pointer int
  * @size: pointer int
  * Return: printf
