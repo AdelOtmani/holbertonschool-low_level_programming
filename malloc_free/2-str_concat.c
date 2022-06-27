@@ -4,7 +4,8 @@
 
 /**
  * *str_concat - Check the code
- * @str: is a char
+ * @s1: is a char pointer
+ * @s2: is a char pointer
  * Return: Always
  */
 char *str_concat(char *s1, char *s2)
