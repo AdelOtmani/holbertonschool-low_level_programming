@@ -16,7 +16,7 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	for (i = 0; str[i] < '\0'; i++)
+	for (i = 0; str[i] != '\0'; i++)
 	{
 		size++;
 	}
@@ -25,10 +25,10 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	for (i = 0; str[i] < '\0'; i++)
+	for (i = 0; str[i] != '\0'; i++)
 	{
 		s[i] = str[i];
 	}
-	s[size] = '\0';
+	s[i] = '\0';
 	return (s);
 }
