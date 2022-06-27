@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * *create_array - Check the code
+ * *_strdup - Check the code
  * @str: is a char
  * Return: Always
  */
@@ -29,6 +29,6 @@ char *_strdup(char *str)
 	{
 		s[i] = str[i];
 	}
-	s[i] = '\0';
+	s[size] = '\0';
 	return (s);
 }
