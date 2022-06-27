@@ -3,15 +3,21 @@
 #include <stdlib.h>
 
 /**
- *
- *
- *
+ * *create_array - Check the code
+ * @size: is an int
+ * @c: is a char
+ * Return: Always
  */
 
 char *create_array(unsigned int size, char c)
 {
 	char *s;
 	unsigned int i;
+
+	if (size == 0)
+	{
+		return (NULL);
+	}
 
 	s = malloc((size + 1) * sizeof(char));
 	if (s == NULL)
@@ -22,6 +28,5 @@ char *create_array(unsigned int size, char c)
 	{
 		s[i] = c;
 	}
-	s[i] = '\0';
 	return (s);
 }
