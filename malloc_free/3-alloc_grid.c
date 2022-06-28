@@ -4,7 +4,7 @@
 
 /**
  * **alloc_grid - Check the code
- * @widht: is an int
+ * @width: is an int
  * @height: is an int
  * Return: Always
  */
@@ -35,7 +35,6 @@ int **alloc_grid(int width, int height)
 			free(s);
 			return (NULL);
 		}
-		
 	}
 	for (i = 0; i < height; i++)
 	{
