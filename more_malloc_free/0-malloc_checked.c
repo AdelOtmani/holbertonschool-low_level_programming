@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdlib.h>
 /**
  * *malloc_checked - Check the code
  * @b: is an unsigned int
