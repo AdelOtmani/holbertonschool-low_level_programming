@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stddef.h>
+#include <stdlib.h>
 /**
  * *_calloc - Check the code
  * @nmemb: unsigned int arg
