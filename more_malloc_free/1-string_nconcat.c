@@ -1,8 +1,10 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * *malloc_checked - Check the code
- * @b: is an unsigned int
+ * *string_nconcat - Check the code
+ * @s1: is a char pointer
+ * @s2: is char pointer
+ * @n: unsigned int arg
  * Return: not with void
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
@@ -10,7 +12,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int size = 0, i, j;
 	char *s;
 
-	
 	if (s1 == NULL)
 	{
 		s1 = "";
