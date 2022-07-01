@@ -7,6 +7,7 @@
  * @name: name
  * @age: age
  * @owner: owner
+ * Return: NULL if fails
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
