@@ -3,7 +3,7 @@
 /**
  * struct dog - struct
  * @name: name
- * @float: float
+ * @age: float
  * @owner: owner
  */
 typedef struct dog
