@@ -3,7 +3,7 @@
 #include <string.h>
 #include <stdlib.h>
 /**
- * *new_dog - Check the code
+ * new_dog - Check the code
  * @name: name
  * @age: age
  * @owner: owner
@@ -20,7 +20,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 	s = strlen(name) + 1;
-	n = strlen(owner) + 1; 
+	n = strlen(owner) + 1;
 	dolgie->name = malloc(sizeof(char) * s);
 	if (dolgie->name == NULL)
 	{
