@@ -3,11 +3,12 @@
 /**
  * array_iterator - Check the code
  * @array: int arg pointer
- * @action: void pointer
+ * @size: arg
+ * @action: arg void
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	long unsigned int i;
+	unsigned long int i;
 
 	if (!array || !action)
 	{
