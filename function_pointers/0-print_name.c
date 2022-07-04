@@ -1,5 +1,4 @@
 #include "function_pointers.h"
-#include <stddef.h>
 /**
  * print_name - Check the code
  * @name: char arg pointer
@@ -9,7 +8,7 @@ void print_name(char *name, void (*f)(char *))
 {
 	if (!f || !name)
 	{
-		return (NULL);
+		return;
 	}
 	f(name);
 }
