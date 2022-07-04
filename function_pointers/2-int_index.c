@@ -1,7 +1,7 @@
 #include <stddef.h>
 #include "function_pointers.h"
 /**
- * int_array - Check the code
+ * int_index - Check the code
  * @array: int arg pointer
  * @size: arg
  * @cmp: arg void
