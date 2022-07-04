@@ -5,6 +5,7 @@
  * @array: int arg pointer
  * @size: arg
  * @cmp: arg void
+ * Return: false -1, true i
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
