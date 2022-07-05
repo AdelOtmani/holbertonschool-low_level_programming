@@ -17,14 +17,15 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(98);
 	}
-	if (argv[2] == NULL || argv[2][1] != '\0')
+	s = get_op_func(argv[2]);
+	if (s == NULL || argv[2][1] != '\0')
 	{
 		printf("Error\n");
 		exit(99);
 	}
 	s = get_op_func(argv[2]);
 
-	if (s == NULL || argc[3] == 0)
+	if (argv[3] == 0)
 	{
 		printf("Error\n");
 		exit(100);
