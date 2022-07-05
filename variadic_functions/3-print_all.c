@@ -9,34 +9,30 @@ void print_all(const char * const format, ...)
 {
 	int i;
 	char *c;
-	int *n;
-	float *v;
 	va_list args;
 
 	va_start(args, format);
 	while (*(format + i) != '\0' && format != NULL)
 	{
 		c = va_arg(args, char *);
-		n = va_arg(args, int *);
-		v = va_arg(args, float *);
 		switch (*(format + i))
 		{
-			case 'c': 
-				printf("%c", *n);
-				break;
+			case 'c':
+					printf("%c", va_arg(args, int));
+					break;
 			case 'i':
-				printf("%i", *n);
-				break;
+					printf("%i", va_arg(args, int));
+					break;
 			case 'f':
-				printf("%f", *v);
-				break;
+					printf("%f", va_arg(args, double));
+					break;
 			case 's':
-				c = (c != NULL) ? c : "(nil)";
-				printf("%s", c);
-				break;
+					c = (c != NULL) ? c : "(nil)";
+					printf("%s", c);
+					break;
 			default:
-				i++;
-				continue;
+					i++;
+					continue;
 		}
 		if (*(format + 1 + i) != 0)
 		{
