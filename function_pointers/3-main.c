@@ -20,14 +20,14 @@ int main(int argc, char *argv[])
 	if (argv[2] == NULL || argv[2][1] != '\0')
 	{
 		printf("Error\n");
-		exit(98);
+		exit(99);
 	}
 	s = get_op_func(argv[2]);
 
 	if (s == NULL)
 	{
 		printf("Error\n");
-		exit(98);
+		exit(100);
 	}
 	r = (*s)(atoi(argv[1]), atoi(argv[3]));
 	printf("%d\n", r);
