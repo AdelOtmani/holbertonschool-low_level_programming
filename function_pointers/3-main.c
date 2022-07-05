@@ -10,7 +10,7 @@
 int main(int argc, char *argv[])
 {
 	int r;
-	int (*s)(int,int);
+	int (*s)(int, int);
 
 	if (argc != 4)
 	{
@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 	}
 	s = get_op_func(argv[2]);
 
-	if (s == NULL)
+	if (s == NULL || argc[3] == 0)
 	{
 		printf("Error\n");
 		exit(100);
