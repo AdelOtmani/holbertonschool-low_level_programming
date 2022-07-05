@@ -10,7 +10,7 @@ int op_add(int a, int b)
 	return (a + b);
 }
 /**
- * op_sub: Check the code
+ * op_sub - Check the code
  * @a: int arg
  * @b: int arg
  * Return: the result
