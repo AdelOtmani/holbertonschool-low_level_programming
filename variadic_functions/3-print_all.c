@@ -7,7 +7,7 @@
  */
 void print_all(const char * const format, ...)
 {
-	int i;
+	int i = 0;
 	char *c;
 	char *sp = ", ";
 	va_list args;
