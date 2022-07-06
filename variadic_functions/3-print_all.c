@@ -9,7 +9,6 @@ void print_all(const char * const format, ...)
 {
 	int i = 0;
 	char *c;
-	char *sp = ", ";
 	va_list args;
 
 	va_start(args, format);
@@ -37,7 +36,7 @@ void print_all(const char * const format, ...)
 		}
 		if (*(format + 1 + i) != 0)
 		{
-			printf("%s", sp);
+			printf(", ");
 		}
 		i++;
 	}
