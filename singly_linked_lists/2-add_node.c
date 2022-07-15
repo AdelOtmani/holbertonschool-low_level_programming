@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * *add_note - check the code
+ * add_node - check the code
  * @head: arg
  * @str: arg pointer
  * Return: adresse of new element
