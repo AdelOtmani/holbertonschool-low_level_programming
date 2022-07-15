@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * add_note - check the code
+ * *add_note - check the code
  * @head: arg
  * @str: arg pointer
  * Return: adresse of new element
@@ -17,14 +17,14 @@ list_t *add_node(list_t **head, const char *str)
 	p = malloc(sizeof(list_t));
 	if (p == NULL)
 		return (NULL);
-	
+
 	s = strdup(str);
 	if (s == NULL)
 	{
 		free(p);
 		return (NULL);
 	}
-	
+
 	while (str[len])
 		len++;
 
