@@ -2,8 +2,9 @@
 #include <stdlib.h>
 /**
  * add_nodeint - Check
- * @*head: arg
+ * @head: arg
  * @n: int arg
+ * Return: p
  */
 listint_t *add_nodeint(listint_t **head, const int n)
 {
