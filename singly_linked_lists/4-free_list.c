@@ -2,9 +2,9 @@
 #include <stdio.h>
 #include <stddef.h>
 /**
- * list_len - Check the code
- * @h: list
- * Return: nodes
+ * free_list - Check the code
+ * @head: list
+ * Return: null
  */
 
 void free_list(list_t *head)
