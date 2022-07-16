@@ -1,4 +1,6 @@
 #include "lists.h"
+#include <stdlib.h>
+
 /**
  * add_nodeint_end - Check
  * @head: arg double pointer
@@ -21,7 +23,7 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 
 	if (*head == NULL)
 	{
-		*head = new;
+		*head = s;
 	}
 	else
 	{
