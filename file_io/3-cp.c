@@ -14,26 +14,25 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)
 	{
-		fprintf(stderr, "Usage: cp file_from file_to\n");
+		dprintf(2, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
 	file_source = open(argv[1], O_RDONLY);
 	if (file_source  == -1)
 	{
-		perror("Error: Can't read from file ");
-		fprintf(stderr, "Error: Can't read from file %s\n", argv[1]);
+		dprintf(2, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
 	file_dest = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
 	while ((rd = read(file_source, buffer, BUFSIZ)) > 0)
 		if (file_dest == -1 || (write(file_dest, buffer, rd) != rd))
 		{
-			fprintf(stderr, "Error: Can't write to %s\n", argv[2]);
+			dprintf(2, "Error: Can't write to %s\n", argv[2]);
 			exit(99);
 		}
 	if (rd == -1)
 	{
-		fprintf(stderr, "Error: Can't read from file %s\n", argv[1]);
+		dprintf(2, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
 	baks = close(file_source);
@@ -41,9 +40,9 @@ int main(int argc, char *argv[])
 	if (baks == -1 || bakd == -1)
 	{
 		if (baks == -1)
-			fprintf(stderr, "Error: Can't close fd %d\n", file_source);
+			dprintf(2, "Error: Can't close fd %d\n", file_source);
 		else if (bakd == -1)
-			fprintf(stderr, "Error: Can't close fd %d\n", file_dest);
+			dprintf(2, "Error: Can't close fd %d\n", file_dest);
 		exit(100);
 	}
 	return (0);
