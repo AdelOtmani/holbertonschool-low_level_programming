@@ -7,32 +7,30 @@
  * @n :arg int
  * Return: data
  */
-dlistint_t *insert_dnodeint_at_index(dlistint_t **head, unsigned int idx, int n)
+dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
-	dlistint_t *node, *tmp, *h;
-	unsigned int i;
+	dlistint_t *p, *tmp;
 
-	tmp = *head;
-	node = malloc(sizeof(dlistint_t));
-	if (node == NULL)
+	tmp = *h;
+	p = malloc(sizeof(dlistint_t));
+	if (p == NULL)
 		return (NULL);
-	node->n = n;
 	if (idx == 0)
 	{
-		node->next = *head;
-		*head = node;
-		return (node);
+		return (add_dnodeint(h, n));
 	}
-	for (i = 0; i + 1 < idx; i++)
+	while (idx != 1)
 	{
 		if (tmp->next == NULL)
 		{
 			return (NULL);
 		}
 		tmp = tmp->next;
+		idx--;
 	}
-	h = tmp->next;
-	tmp->next = node;
-	node->next = h;
-	return (node);
+	p->n = n;
+	p->prev = tmp;
+	p->next = tmp->next;
+	tmp->next = p;
+	return (p);
 }
