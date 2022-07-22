@@ -2,7 +2,7 @@
 #include <stdlib.h>
 /**
  * insert_dnodeint_at_index - Check the code
- * @head: double pointer arg
+ * @h: double pointer arg
  * @idx: unsigned int arg
  * @n :arg int
  * Return: data
@@ -27,6 +27,10 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		}
 		tmp = tmp->next;
 		idx--;
+	}
+	if (tmp->next == NULL)
+	{
+		return (add_dnodeint_end(h, n));
 	}
 	p->n = n;
 	p->prev = tmp;
