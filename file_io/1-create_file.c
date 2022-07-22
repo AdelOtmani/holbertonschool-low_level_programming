@@ -1,9 +1,9 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * creat_file - Check the code
+ * create_file - Check the code
  * @filename: arg char
- * @texte_content: arg char
+ * @text_content: arg char
  * Return: nbr of letters
  */
 int create_file(const char *filename, char *text_content)
