@@ -18,10 +18,11 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		return (-1);
 	if (index <= 0)
 	{
-		return (-1);
+		free(tmp);
+		return (1);
 	}
-	for(; tmp->next == NULL || i < index; tmp = tmp->next, i++)
-	if (tmp == NULL)
+	for (; tmp->next == NULL || i < index; tmp = tmp->next, i++)
+	if (tmp->next == NULL)
 		return (-1);
 	tmp->next->prev = tmp->prev;
 	tmp->next->prev = tmp->next;
