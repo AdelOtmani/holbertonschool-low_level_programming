@@ -26,7 +26,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		}
 	}
 
-	while (tmp && i < index)
+	while (tmp && i < index - 1)
 	{
 		tmp = tmp->next;
 		i++;
