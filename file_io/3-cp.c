@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 	file_source = open(argv[1], O_RDONLY);
 	if (file_source  == -1)
 	{
-		perror("Error: Can't read from file %s\n", argv[1]);
+		perror("Error: Can't read from file ");
 		fprintf(stderr, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
