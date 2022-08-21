@@ -4,8 +4,7 @@
 /**
  * hash_table_create - Function main
  * @size: long int arg
- * Return: Returns a pointer to the newly created hash table
- * If something went wrong, your function should return NULL
+ * Return: Returns a pointer to the newly created hash table If something went wrong, your function should return NULL
  */
 hash_table_t *hash_table_create(unsigned long int size)
 {
