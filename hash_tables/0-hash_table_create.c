@@ -1,4 +1,6 @@
 #include "hash_tables.h"
+#include <stddef.h>
+#include <stdlib.h>
 /**
  * hash_table_create - Function main
  * @size: long int arg
@@ -10,7 +12,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 {
 	hash_table_t *new_htable;
 
-	if (size != 0)
+	if (!size)
 	{
 		return (NULL);
 	}
