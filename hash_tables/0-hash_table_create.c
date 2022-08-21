@@ -23,7 +23,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 	}
 	new_htable->size;
 	new_htable->array == malloc(sizeof(hash_node_t *) * size);
-	if (array == NULL)
+	if (new_htable->array == NULL)
 	{
 		return (NULL);
 	}
