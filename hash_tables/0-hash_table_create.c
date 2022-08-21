@@ -1,4 +1,4 @@
-#include "hash.h"
+#include "hash_tables.h"
 /**
  * hash_table_create - Function main
  * @size: long int arg
