@@ -33,12 +33,12 @@ int binary_search_recu(int *array, size_t b, size_t e, int value)
 		return (-1);
 	}
 	printf("Searching in array:");
-	for(i = b; i < e; i++)
+	for (i = b; i < e; i++)
 	{
 		printf("%s%d", d, array[i]);
-		d =", ";
+		d = ", ";
 	}
-	printf ("\n");
+	printf("\n");
 	if (array[m] == value)
 	{
 		return (m);
@@ -46,7 +46,7 @@ int binary_search_recu(int *array, size_t b, size_t e, int value)
 	if (array[m] < value)
 	{
 		return (binary_search_recu(array, m + 1, e, value));
-	}	
+	}
 	return (binary_search_recu(array, b, m, value));
 
 }
