@@ -1,5 +1,4 @@
 #include "search_algos.h"
-
 /**
 * binary_search - Function
 * @array: array to search
@@ -7,11 +6,18 @@
 * @value: value to search for
 * Return: the first index where value is located
 */
+int binary_search(int *array, size_t size, int value)
+{
+	if (array == NULL)
+		return (-1);
+	return (binary_search_recu(array, 0, size, value));
+}
 
 /**
-* binary_search - Function
+* binary_search_recu - Function
 * @array: array to search
-* @size: size of the array
+* @b: begin of the array
+* @e: end of the array
 * @value: value to search for
 * Return: the first index where value is located
 */
@@ -27,7 +33,7 @@ int binary_search_recu(int *array, size_t b, size_t e, int value)
 		return (-1);
 	}
 	printf("Searching in array:");
-	for (i = b; i < e; i++)
+	for(i = b; i < e; i++)
 	{
 		printf("%s%d", d, array[i]);
 		d =", ";
@@ -43,11 +49,4 @@ int binary_search_recu(int *array, size_t b, size_t e, int value)
 	}	
 	return (binary_search_recu(array, b, m, value));
 
-}
-
-int binary_search(int *array, size_t size, int value)
-{
-	if (array == NULL)
-		return (-1);
-	return (binary_search_recu(array, 0, size, value));
 }
